@@ -31,4 +31,4 @@ const myfun = function x(){
 
 /*  ** MEMORY**
   2 types : Stack(Primitive) and Heap(non-primitive)
-   
+   */
