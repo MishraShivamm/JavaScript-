@@ -28,3 +28,7 @@ const myfun = function x(){
   console.log("Namaste");
 }
 
+
+/*  ** MEMORY**
+  2 types : Stack(Primitive) and Heap(non-primitive)
+   
