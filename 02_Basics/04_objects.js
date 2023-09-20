@@ -63,7 +63,7 @@ console.log(price);
     "price" :"Free"
 } 
 
-sometimes we get API in form of array too 
+//sometimes we get API in form of array too 
 [
     {},
     {},
