@@ -36,19 +36,18 @@ if(true){
 
 //++++++++++++++++++++++++++++++++++ INTERESTING +++++++++++++++++++++++++++++++++++++++++
 
+add1(5)
 function add1(num1){
     return num1 +1
     
 
 }
 
-add1(5)
+
 
 
 const add2 = function (num1){
     return num1 +2
 }
 add2(6)
-
-
 
