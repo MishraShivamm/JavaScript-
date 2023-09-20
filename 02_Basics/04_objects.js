@@ -56,16 +56,16 @@ console.log(price);
 
 // ******* API********
 
- JSON 
+/* JSON 
 {
     "name":"shivam",
     "course" :" JacaScript",
     "price" :"Free"
 } 
 
-//sometimes we get API in form of array too 
+sometimes we get API in form of array too 
 [
     {},
     {},
     {}
-]
+] */
