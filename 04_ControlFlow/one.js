@@ -20,7 +20,7 @@ const UserloggedIn = true
 const debitcard = true
 
 if (UserloggedIn && debitcard){
-    console.
+    console.log("looged in user");
 }
 
 // Short hand notation 
