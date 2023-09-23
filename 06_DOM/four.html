@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body background-color:"#212121;color:#fff";>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    // These are 2 types of how to add new element in list  (first one is normal and 2nd one is optimized way)
+    function addlang(langname) {
+        const li = document.createElement('li')
+        li.innerHTML = '${langname}'
+        document.querySelector(".language")
+        appendChild(li)
+    }
+    addlang("CPP")
+    addlang("CPP")
+    addlang("CPP")
+
+    function addoptlang (langname){
+        const li= document.createElement('li');
+        li.appendChild(document.createTextNode(langname)) // this is optimized way 
+        document.querySelector('.language').appendChild(li)
+    }
+    appendChild("Java")
+
+    // Edit 
+
+    const one1 = document.querySelector("li.nth-child(0)")
+    //one1.innerHTML ="MOJO"
+    const two=document.createElement('li')
+    two.textContent = "CPP"
+    one1.replaceWith(two)
+
+       // other method od edit
+    const three = document.querySelector("li:first-child")
+    three.outerHTML = '<li>TypeScript</li>'
+    
+    //REMOVE
+
+    const last = document.querySelector('li: last-child')
+    last.remove()
+
+</script>
+</html>

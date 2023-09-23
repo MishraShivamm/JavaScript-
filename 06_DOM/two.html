@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom learning</title>
+</head>
+<body>
+    <div class= "parent">
+        <div class="DAY"> Mon</div>
+        <div class="DAY"> Tue</div>
+        <div class="DAY"> Wed</div>
+        <div class="DAY"> Thr</div>
+        <div class="DAY"> Fri</div>
+
+    </div>
+    
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent);
+    console.log(parent.childern[1].innerHTML);
+
+    for (let index = 0; index < parent.childern.length; index++) {
+        console.log(parent.childern[i].innerHTML);
+        
+    }
+    parent.childern[1].style.color='orange'
+    console.log(parent.firstElementChild);
+
+    const dayone = document.querySelector('.day')
+    console.log(dayone);
+    console.log(dayone.parentElement);
+    console.log(dayone.nextElementSibling);
+
+    console.log("NODES:", parent.childNodes);
+</script>
+</html>
