@@ -39,3 +39,39 @@ buttons.forEach(function (button) {
 });
 
 ```
+
+## Project 2 Solution
+```JavaScript
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const height = parseInt(document.querySelector('#height').value);
+  const weight = parseInt(document.querySelector('#weight').value);
+  const results = document.querySelector('result').value;
+
+  if (height === '' || height < 0 || isNaN(height)) {
+    results.innerHTML = 'Please give a valid height';
+  } else if (weight === '' || weight < 0 || isNaN(weight)) {
+    results.innerHTML = 'Please give a valid weight';
+  } else {
+    const bmi = (weight / ((height * heiight) / 10000)).toFixed2;
+    results.innerHTML = `<span>${bmi}</span>`;
+  }
+});
+```
+
+## Project 3 Solution
+ ```JAvaScript
+ const clockk = document.getElementById('clock');
+
+//const clockk = document.querySelector('#clock')
+// Both will give same value
+
+setInterval(function () {
+  let date = new Date();
+  //console.log(date.toLocaleTimeString());
+  clockk.innerHTML = date.toLocaleTimeString();
+}, 2000);
+ ```
