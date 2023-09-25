@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async  </title>
+</head>
+<body>
+    <h1>Chai or Code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const test =()=> {
+        console.log("Shivam");
+    }
+    const chngtext = () => {
+        document.querySelector('hi').innerHTML="Best  COde"
+    }
+    const time = setTimeout(chngtext,3000)
+    //clearTimeout(time)
+
+    document.querySelector('#stop').addEventListener('click', ()=>{
+        clearTimeout(time)
+        console.log("STOPPED");
+    })
+
+</script>
+</html>
