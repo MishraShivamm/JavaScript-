@@ -1,24 +1,19 @@
-*{
-    margin:0;
-    padding:0;
+.github-card {
+        text-align: center;
+        background-color: #f5f5f5;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-}
-html{
-    box-sizing:border-box;
-    font-size: 62.5%;
-}
-body{
-    background-color: aquamarine;
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
-    min-height: 100 vh;
-}
+    #profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
 
-
-.card-img{
-    display: block;
-    width: 100px;
-    height: 20 rem;
-    object-fit: cover;
-}
+    #follower-count {
+        font-size: 18px;
+    }
