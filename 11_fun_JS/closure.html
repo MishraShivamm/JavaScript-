@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+<body>
+    <button id= "orange">orange</button>
+    <button id= "Green">Green</button>
+    <button id= "blue">blue</button>
+    <button id= "black">black</button>
+    <button id= "violet">violet</button>
+    <button id= "brown">brown</button>
+    
+</body>
+<script>
+/*function init() {
+
+    let name = "Mozilla"; // name is a local variable created by init
+    function displayName() {
+      // displayName() is the inner function, that forms the closure
+      console.log(name); // use variable declared in the parent function
+    }
+    displayName();
+  }
+  init(); 
+function outer(){
+    let name ="shivam"
+    console.log(secret);//
+    function inner(){
+        let secret = "my123"
+        console.log(name);
+    }
+    function inner2(){
+        console.log(secret); // won't  be accessed
+        console.log(name)
+    }
+    inner()
+}
+outer()
+console.log(user); 
+
+
+function makeFunc() {
+  const name = "Mozilla";
+  function displayName() {
+    console.log(name);
+  }
+  return displayName;
+}
+
+const myFunc = makeFunc();
+myFunc(); function makeFunc() {
+  const name = "Mozilla";
+  function displayName() {
+    console.log(name);
+  }
+  return displayName;
+}
+
+const myFunc = makeFunc();
+myFunc();
+*/
+
+</script>
+<script>
+    /*document.getElementById("orange").onclick =()=>{
+        document.body.style.backgroundColor = `orange`
+    }
+    document.getElementById("green").onclick =()=>{
+        document.body.style.backgroundColor = `green`
+    }*/
+    
+    // Practical Example 
+
+    function clickhandler(color){
+       // document.body.style.backgroundColor = `${color}`
+      return ()=>{
+        document.body.style.backgroundColor = `${color}`
+       }
+    }
+
+    document.getElementById('orange').onclick = clickhandler('orange')
+    document.getElementById('Green').onclick = clickhandler('Green')
+    document.getElementById('blue').onclick = clickhandler('blue')
+    document.getElementById('black').onclick = clickhandler('black')
+    document.getElementById('brown').onclick = clickhandler('brown')
+    document.getElementById('violet').onclick = clickhandler('violet')
+
+
+</script>
+</html>
