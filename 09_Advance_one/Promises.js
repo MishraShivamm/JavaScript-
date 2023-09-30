@@ -16,6 +16,8 @@ promiseOne.then(()=>{
     console.log("Promise Consumed");
 })
 
+
+// This is second type of Promise
 new Promise ( (resolve,reject)=> {
     setTimeout (()=>{
         console.log("Task 2 Completed");
