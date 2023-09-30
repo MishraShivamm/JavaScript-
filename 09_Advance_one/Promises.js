@@ -30,7 +30,7 @@ new Promise ( (resolve,reject)=> {
 // this is 3rd type of promise 
 const promiseThree = new Promise ((resolve,reject) =>{
     setTimeout(() => {
-        resolve({username:"Shiam" , email: "mishrashiv1708@gmail.com"}) 
+        resolve({username:"Shivam" , email: "mishrashiv1708@gmail.com"}) 
     }, 1000);
 }) /*in this one we can print the data in resolve by giving parameter to the call back function (i.e. .then (()=> {})) or
  use can declare the promise as a variable and print the variable directly in call back function */
